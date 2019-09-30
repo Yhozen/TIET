@@ -9,5 +9,6 @@ module.exports = {
   },
   devIndicators: {
     autoPrerender: false
-  }
+  },
+  assetPrefix: process.env.NODE_ENV === "production" ? "/TIET" : ""
 };

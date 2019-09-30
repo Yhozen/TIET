@@ -61,7 +61,6 @@ export default () => {
           font-family: Avenir Next, -apple-system, BlinkMacSystemFont, Avenir,
             Helvetica, sans-serif;
           background-color: #2980b9;
-          overflow: hidden;
           scroll-behavior: smooth;
         }
         h1 {
