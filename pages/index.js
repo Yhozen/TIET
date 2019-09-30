@@ -4,7 +4,7 @@ import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
 
 import SkewedText from "../components/skewedTextMagic";
-import Section from "../components/section";
+import Button from "../components/button";
 import Logo from "../components/logo";
 import FloatingIcon from "../components/floatingIcon";
 
@@ -44,10 +44,11 @@ export default () => {
             <h1>NOMBREDELAWEA</h1>
           </div>
         </Scene>
-        <Scene triggerHook="onLeave" duration="100%" pin>
+        <Scene triggerHook="onLeave" duration="300%" pin>
           <Timeline wrapper={<div id="pinContainer" />}>
             <Tween from={{ x: "-100%" }} to={{ x: "0%" }}>
               <section className="panel turqoise">
+                <Button>Heello</Button>
                 <span>DAME TU INFO</span>
               </section>
             </Tween>

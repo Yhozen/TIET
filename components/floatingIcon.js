@@ -34,7 +34,8 @@ export default ({ color = "white" }) => {
         }
         polygon {
           fill: ${color};
-          box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+          stroke: rgba(10, 10, 10, 0.7);
+          stroke-width: 0.2;
 
           -webkit-animation: pulse 1s ease infinite;
           animation: pulse 1s ease infinite;
