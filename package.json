@@ -1,0 +1,21 @@
+{
+  "name": "lesson",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@n8tb1t/use-scroll-position": "^1.0.38",
+    "@svgr/webpack": "^4.3.3",
+    "next": "9.0.6",
+    "particles.js": "^2.0.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-gsap": "^1.2.0",
+    "react-scrollmagic": "^2.1.1",
+    "vivus": "^0.4.5"
+  }
+}
