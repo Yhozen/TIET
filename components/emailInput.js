@@ -35,6 +35,7 @@ export default ({
         border: 0;
         outline: 0;
         padding: 22px 18px;
+        -webkit-appearance: none;
       }
       input:focus {
         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);

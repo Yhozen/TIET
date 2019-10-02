@@ -45,14 +45,15 @@ export default () => {
             <h1>NOMBREDELAWEA</h1>
           </div>
         </Scene>
-        <Scene triggerHook="onLeave" duration="300%" pin>
-          <Timeline wrapper={<div id="pinContainer" />}>
-            <Tween from={{ x: "-100%" }} to={{ x: "0%" }}>
-              <section className="panel turqoise">
-                <EmailInput label="hola" />
-              </section>
-            </Tween>
-          </Timeline>
+        <Scene
+          duration="200%"
+          triggerHook="onLeave"
+          classToggle="showPanel"
+          pin={true}
+        >
+          <section className="panel turqoise">
+            <EmailInput label="hola" />
+          </section>
         </Scene>
       </Controller>
       <FloatingIcon />
@@ -86,26 +87,25 @@ export default () => {
           z-index: 0;
         }
 
-        #pinContainer {
-          height: 100vh;
-          width: 100vw;
-          overflow: hidden;
-        }
-        #pinContainer .panel {
+        .panel {
           height: 100vh;
           width: 100vw;
           position: absolute;
           text-align: center;
-        }
-        .panel {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          transform: translate(-100%, 0%) matrix(1, 0, 0, 1, 0, 0);
+          transition: transform 0.3s;
+          transition-timing-function: ease-out;
         }
 
         .panel.blue {
           background-color: #3883d8;
+        }
+        .showPanel {
+          transform: translate(0%, 0%) matrix(1, 0, 0, 1, 0, 0);
         }
 
         .panel.turqoise {
