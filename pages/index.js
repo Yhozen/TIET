@@ -7,6 +7,7 @@ import SkewedText from "../components/skewedTextMagic";
 import Button from "../components/button";
 import Logo from "../components/logo";
 import FloatingIcon from "../components/floatingIcon";
+import EmailInput from "../components/emailInput";
 
 import particlesJson from "../util/particles.json";
 
@@ -48,8 +49,7 @@ export default () => {
           <Timeline wrapper={<div id="pinContainer" />}>
             <Tween from={{ x: "-100%" }} to={{ x: "0%" }}>
               <section className="panel turqoise">
-                <Button>Heello</Button>
-                <span>DAME TU INFO</span>
+                <EmailInput label="hola" />
               </section>
             </Tween>
           </Timeline>
@@ -97,14 +97,11 @@ export default () => {
           position: absolute;
           text-align: center;
         }
-
-        .panel span {
-          position: relative;
-          display: block;
-          overflow: visible;
-          top: 50%;
-          font-size: 80px;
-          color: white;
+        .panel {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
 
         .panel.blue {
@@ -112,7 +109,7 @@ export default () => {
         }
 
         .panel.turqoise {
-          background-color: black;
+          background-color: #f5f6fa;
         }
 
         .panel.green {

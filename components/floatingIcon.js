@@ -31,11 +31,10 @@ export default ({ color = "white" }) => {
         }
         svg {
           transform: rotate(90deg);
+          filter: drop-shadow(1px 2px 0 #666);
         }
         polygon {
           fill: ${color};
-          stroke: rgba(10, 10, 10, 0.7);
-          stroke-width: 0.2;
 
           -webkit-animation: pulse 1s ease infinite;
           animation: pulse 1s ease infinite;
